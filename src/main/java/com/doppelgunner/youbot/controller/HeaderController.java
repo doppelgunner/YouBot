@@ -68,7 +68,7 @@ public class HeaderController extends Controller {
 
     @FXML
     public void goDemo() {
-        Util.goLink("https://www.google.com"); //TODO setup link after making a demo
+        Util.goLink("https://youtu.be/GNQiAWNQ8HA");
     }
 
     @FXML

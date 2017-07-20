@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="YouBot.jnlp">
+  <information>
+    <title>YouBot</title>
+    <vendor>doppelgunner</vendor>
+    <description>A youtube commenter app.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TrayNotification.jar" size="41019" download="eager" />
+    <jar href="YouBot.jar" size="90695" download="eager" />
+    <jar href="commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="google-api-client-1.22.0.jar" size="199100" download="eager" />
+    <jar href="google-api-services-oauth2-v2-rev75-1.19.0.jar" size="15975" download="eager" />
+    <jar href="google-api-services-youtube-v3-rev182-1.22.0.jar" size="326262" download="eager" />
+    <jar href="google-http-client-1.22.0.jar" size="357024" download="eager" />
+    <jar href="google-http-client-jackson2-1.22.0.jar" size="6720" download="eager" />
+    <jar href="google-oauth-client-1.22.0.jar" size="61342" download="eager" />
+    <jar href="google-oauth-client-java6-1.20.0.jar" size="10914" download="eager" />
+    <jar href="google-oauth-client-jetty-1.20.0.jar" size="5935" download="eager" />
+    <jar href="guava-jdk5-17.0.jar" size="2059438" download="eager" />
+    <jar href="httpclient-4.5.3.jar" size="747794" download="eager" />
+    <jar href="httpcore-4.4.6.jar" size="323824" download="eager" />
+    <jar href="jackson-annotations-2.8.0.jar" size="55784" download="eager" />
+    <jar href="jackson-core-2.8.9.jar" size="282633" download="eager" />
+    <jar href="jackson-databind-2.8.9.jar" size="1242477" download="eager" />
+    <jar href="jetty-6.1.26.jar" size="539912" download="eager" />
+    <jar href="jetty-util-6.1.26.jar" size="177131" download="eager" />
+    <jar href="jsr305-1.3.9.jar" size="33015" download="eager" />
+    <jar href="servlet-api-2.5-20081211.jar" size="134133" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="com.doppelgunner.youbot.YouBot"  name="YouBot" />
+  <update check="background"/>
+</jnlp>
