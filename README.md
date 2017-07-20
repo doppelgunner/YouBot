@@ -14,6 +14,10 @@ A simple youtube commenter app
 * Just unzip -> click shortcuts then voila
 * **IMPORTANT: don't put in "program files" folder as it does not allow write or read access and needs permission**
 
+## System Requirements
+* JRE 1.8+
+* Internet of course -> needed to comment
+
 ## Tools used
 * [IntellijIDEA](https://www.jetbrains.com/idea/) (IDE)
 * [Glyphicons](http://glyphicons.com/) (for almost all icons)
