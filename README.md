@@ -1,2 +1,15 @@
-# YouBot
+# ![YouBot Icon](https://github.com/doppelgunner/YouBot/blob/master/src/main/resources/images/icon.png)
 A simple youtube commenter app
+
+## Donations
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.me/doppelgunner)  
+[![patreon](https://c5.patreon.com/external/logo/logomarkOrange.svg)](https://www.patreon.com/doppelgunner)
+
+## Demo
+* Watch the demo here[to be added later]:
+
+## Tools used
+* [IntellijIDEA](https://www.jetbrains.com/idea/) (IDE)
+* [Glyphicons](http://glyphicons.com/) (for almost all icons)
+* [youtube API](https://developers.google.com/youtube/)
+* [TrayNotification](https://github.com/PlusHaze/TrayNotification) by PlusHaze
