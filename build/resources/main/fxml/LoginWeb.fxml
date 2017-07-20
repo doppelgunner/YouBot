@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.doppelgunner.youbot.controller.LoginWebController">
+   <center>
+      <WebView fx:id="loginWebView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="635.0" spacing="10.0">
+         <children>
+            <Label text="Status:" BorderPane.alignment="CENTER" />
+            <Label fx:id="statusLabel" text="LOADING..." />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

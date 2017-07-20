@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.doppelgunner.youbot.controller.FooterController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="paypalButton" mnemonicParsing="false" onAction="#goPaypal" prefHeight="32.0" prefWidth="32.0">
+               <tooltip>
+                  <Tooltip text="Donate: paypal" />
+               </tooltip></Button>
+            <Button fx:id="patreonButton" mnemonicParsing="false" onAction="#goPatreon" prefHeight="32.0" prefWidth="32.0">
+               <tooltip>
+                  <Tooltip text="Donate: patreon" />
+               </tooltip></Button>
+            <Hyperlink fx:id="glyphiconsLink" onAction="#goGlyphicons" text="Icons are from: glyphicons.com">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Hyperlink>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
