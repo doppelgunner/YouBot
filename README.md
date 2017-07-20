@@ -20,6 +20,9 @@ alt="YouBot Icon" border="10" /></a>
 * JRE 1.8+
 * Internet of course -> needed to comment
 
+## Limitations
+* I didn't subscribe for higher quota for google's data api.
+
 ## Tools used
 * [IntellijIDEA](https://www.jetbrains.com/idea/) (IDE)
 * [Glyphicons](http://glyphicons.com/) (for almost all icons)
