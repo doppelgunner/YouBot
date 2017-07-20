@@ -1,5 +1,7 @@
-# ![YouBot Icon](https://github.com/doppelgunner/YouBot/blob/master/src/main/resources/images/icon.png)
-A simple youtube commenter app
+<a href="https://youtu.be/GNQiAWNQ8HA
+" target="_blank"><img src="https://github.com/doppelgunner/YouBot/blob/master/src/main/resources/images/icon.png" 
+alt="YouBot Icon" border="10" /></a>
+* A simple youtube commenter app
 
 ## Donations
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.me/doppelgunner)  
