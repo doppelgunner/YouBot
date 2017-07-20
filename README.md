@@ -8,6 +8,12 @@ A simple youtube commenter app
 ## Demo
 * Click the YouBot picture on the top to go to youtube demo [to be added later]
 
+## Download and Installation
+* Link to download: https://github.com/doppelgunner/YouBot/releases
+* Download the EXE for windows. Download JAR for other platforms.
+* Just unzip -> click shortcuts then voila
+* **IMPORTANT: don't put in "program files" folder as it does not allow write or read access and needs permission**
+
 ## Tools used
 * [IntellijIDEA](https://www.jetbrains.com/idea/) (IDE)
 * [Glyphicons](http://glyphicons.com/) (for almost all icons)
