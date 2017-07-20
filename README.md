@@ -6,7 +6,7 @@ A simple youtube commenter app
 [![patreon](https://c5.patreon.com/external/logo/logomarkOrange.svg)](https://www.patreon.com/doppelgunner)
 
 ## Demo
-* Watch the demo here[to be added later]:
+* Click the YouBot picture on the top to go to youtube demo [to be added later]
 
 ## Tools used
 * [IntellijIDEA](https://www.jetbrains.com/idea/) (IDE)
