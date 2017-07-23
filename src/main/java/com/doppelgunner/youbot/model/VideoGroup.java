@@ -1,5 +1,6 @@
 package com.doppelgunner.youbot.model;
 
+import com.doppelgunner.youbot.Util;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.api.services.youtube.model.SearchResult;
 import com.google.api.services.youtube.model.Video;
@@ -168,5 +169,15 @@ public class VideoGroup {
     @JsonIgnore
     public void setDescriptionLabel(Label descriptionLabel) {
         this.descriptionLabel = descriptionLabel;
+    }
+
+    @JsonIgnore
+    public void openInBrowser() {
+        Util.goLink(getVideoURL());
+    }
+
+    @JsonIgnore
+    public String getVideoURL() {
+        return Util.getYoutubeWatch() + getVideoId();
     }
 }

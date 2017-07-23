@@ -272,6 +272,7 @@ public class Util {
             youTubeAuthentication.commentThreads().insert("snippet",commentThread).execute();
         } catch (IOException e) {
             e.printStackTrace();
+            Util.notify("YouBot", "Problem sending comment, check Internet connection", NotificationType.NOTICE);
         }
     }
 
@@ -333,6 +334,10 @@ public class Util {
     }
 
     public static void runBackground(Runnable toRun, Runnable onSucceded, boolean daemon) {
+        runBackground(toRun, onSucceded, null, daemon);
+    }
+
+    public static void runBackground(Runnable toRun, Runnable onSucceded, Runnable onFailed, boolean daemon) {
         BackgroundTask task = new BackgroundTask(toRun);
         Thread thread = new Thread(task);
         thread.setDaemon(daemon);
@@ -340,6 +345,11 @@ public class Util {
         task.setOnSucceeded(e -> {
             if (onSucceded != null) {
                 onSucceded.run();
+            }
+        });
+        task.setOnFailed(e -> {
+            if (onFailed != null) {
+                onFailed.run();
             }
         });
     }
@@ -388,5 +398,9 @@ public class Util {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static String getYoutubeWatch() {
+        return "www.youtube.com/watch?v=";
     }
 }

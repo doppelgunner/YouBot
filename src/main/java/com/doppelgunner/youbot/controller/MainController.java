@@ -15,6 +15,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.MouseButton;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import tray.notification.NotificationType;
@@ -109,35 +113,71 @@ public class MainController extends Controller {
 
         resultsList = FXCollections.observableArrayList();
         selectedList = FXCollections.observableArrayList();
-        resultsListView.setCellFactory(param -> new ListCell<VideoGroup>() {
-            @Override
-            protected void updateItem(VideoGroup item, boolean empty) {
-                super.updateItem(item, empty);
-                if (item != null && !empty) {
-                    HBox hBox = (HBox)item.getLayoutNode();
-                    hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
-                    setGraphic(hBox);
-                } else {
-                    setGraphic(null);
+        resultsListView.setCellFactory(param -> {
+            ListCell<VideoGroup> cell = new ListCell<VideoGroup>() {
+                @Override
+                protected void updateItem(VideoGroup item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (item != null && !empty) {
+                        HBox hBox = (HBox)item.getLayoutNode();
+                        hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
+                        setGraphic(hBox);
+                    } else {
+                        setGraphic(null);
+                    }
                 }
-            }
+            };
+            cell.setOnMouseClicked(me -> {
+                if (cell.isEmpty()) me.consume();
+            });
+            addContextMenu(cell);
+            return cell;
         });
-        selectedListView.setCellFactory(param -> new ListCell<VideoGroup>() {
-            @Override
-            protected void updateItem(VideoGroup item, boolean empty) {
-                super.updateItem(item, empty);
-                if (item != null && !empty) {
-                    HBox hBox = (HBox)item.getLayoutNode();
-                    hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
-                    setGraphic(hBox);
-                } else {
-                    setGraphic(null);
+        selectedListView.setCellFactory(param -> {
+            ListCell<VideoGroup> cell = new ListCell<VideoGroup>() {
+                @Override
+                protected void updateItem(VideoGroup item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (item != null && !empty) {
+                        HBox hBox = (HBox)item.getLayoutNode();
+                        hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
+                        setGraphic(hBox);
+                    } else {
+                        setGraphic(null);
+                    }
                 }
-            }
+            };
+            cell.setOnMouseClicked(me -> {
+                if (cell.isEmpty()) me.consume();
+            });
+            addContextMenu(cell);
+            return cell;
         });
 
         resultsListView.setItems(resultsList);
         selectedListView.setItems(selectedList);
+
+        resultsListView.setOnMouseClicked(me -> {
+            if (me.getButton().equals(MouseButton.PRIMARY)) {
+                if (me.getClickCount() == 2) {
+                    VideoGroup vg = resultsListView.getSelectionModel().getSelectedItem();
+                    if (vg != null) {
+                        vg.openInBrowser();
+                    }
+                }
+            }
+        });
+
+        selectedListView.setOnMouseClicked(me -> {
+            if (me.getButton().equals(MouseButton.PRIMARY)) {
+                if (me.getClickCount() == 2) {
+                    VideoGroup vg = selectedListView.getSelectionModel().getSelectedItem();
+                    if (vg != null) {
+                        vg.openInBrowser();
+                    }
+                }
+            }
+        });
 
         ListProperty resultLP = new SimpleListProperty<>(resultsList);
         resultLP.addListener((o,ov,nv) ->
@@ -147,7 +187,50 @@ public class MainController extends Controller {
         selectedLP.addListener((o,ov,nv) ->
             selectedCountLabel.setText("(" + selectedList.size() + ")"));
 
+        searchTextField.setOnKeyPressed(ke -> {
+            if (ke.getCode() == KeyCode.ENTER) {
+                search();
+            }
+        });
         setIcons();
+    }
+
+    private void addContextMenu(ListCell<VideoGroup> cell) {
+
+        ContextMenu cm = new ContextMenu();
+        MenuItem openInBrowserItem = new MenuItem("Open video in browser");
+        MenuItem copyTitleItem = new MenuItem("Copy title to clipboard");
+        MenuItem copyUploaderItem = new MenuItem("Copy uploader to clipboard");
+        MenuItem copyVideoURLItem = new MenuItem("Copy video URL to clipboard");
+        MenuItem copyVideoIDItem = new MenuItem("Copy video ID to clipboard");
+        cm.getItems().addAll(
+                openInBrowserItem,
+                copyTitleItem,
+                copyUploaderItem,
+                copyVideoURLItem,
+                copyVideoIDItem);
+
+        openInBrowserItem.setOnAction(event -> cell.getItem().openInBrowser());
+        copyTitleItem.setOnAction(event -> setClipboardContent(cell.getItem().getTitle()));
+        copyUploaderItem.setOnAction(event -> setClipboardContent(cell.getItem().getChannelTitle()));
+        copyVideoURLItem.setOnAction(event -> setClipboardContent(cell.getItem().getVideoURL()));
+        copyVideoIDItem.setOnAction(event -> setClipboardContent(cell.getItem().getVideoId()));
+
+        cell.emptyProperty().addListener((o,wasEmpty,isEmpty) -> {
+            if (isEmpty) {
+                cell.setContextMenu(null);
+            } else {
+                cell.setContextMenu(cm);
+            }
+        });
+    }
+
+    private void setClipboardContent(String strContent) {
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        clipboard.clear();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(strContent);
+        clipboard.setContent(content);
     }
 
     private void setIcons() {
@@ -210,7 +293,12 @@ public class MainController extends Controller {
                             .map(r -> new VideoGroup(r))
                             .collect(Collectors.toList()));
                     searchButton.setDisable(false);
-                }, true
+                },
+                () -> {
+                    searchButton.setDisable(false);
+                    Util.notify("YouBot", "Search: Failed no internet connection", NotificationType.NOTICE);
+                },
+                true
         );
     }
 
@@ -288,6 +376,10 @@ public class MainController extends Controller {
             Util.notify("YouBot", "Can't send an empty comment", NotificationType.NOTICE);
             return;
         }
+        if (selectedList.isEmpty()) {
+            Util.notify("YouBot", "Choose videos to comment on", NotificationType.NOTICE);
+            return;
+        }
         sendCommentButton.setDisable(true);
         Util.runBackground(
                 () -> {
@@ -297,7 +389,12 @@ public class MainController extends Controller {
                 },
                 () -> {
                     sendCommentButton.setDisable(false);
-                }, false
+                },
+                () -> {
+                    sendCommentButton.setDisable(false);
+                    Util.notify("YouBot", "Sending comment failed, check internet connection.", NotificationType.NOTICE);
+                },
+                false
         );
     }
 
