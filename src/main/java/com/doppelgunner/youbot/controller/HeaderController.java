@@ -74,7 +74,6 @@ public class HeaderController extends Controller {
     @FXML
     public void log() {
         logButton.setDisable(true);
-        System.out.println("log button is pressed");
         if (!YouBot.isLoggedIn()) {
             Util.runBackground(
                     () -> YouBot.login(),

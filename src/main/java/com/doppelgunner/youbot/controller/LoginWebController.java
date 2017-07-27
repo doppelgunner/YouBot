@@ -36,6 +36,9 @@ public class LoginWebController extends Controller {
                     break;
             }
         });
+
+        //this is important! needed to login to google
+        System.setProperty("sun.net.http.allowRestrictedHeaders", "true");
     }
 
     public void openURL(String url) {

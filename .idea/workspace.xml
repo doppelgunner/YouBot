@@ -7,148 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c967fd13-7c11-4eda-aec5-2f5cc1c4c354" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/YouBot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/YouBot.jnlp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot.jnlp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/YouBot.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/YouBot.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/app/YouBot.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/msvcp120.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/msvcr100.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/msvcr120.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/packager.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/COPYRIGHT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/THIRDPARTYLICENSEREADME-JAVAFX.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/THIRDPARTYLICENSEREADME.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/Welcome.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/JAWTAccessBridge-64.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/JavaAccessBridge-64.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/WindowsAccessBridge-64.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/attach.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/awt.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/bci.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/dcpr.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/decora_sse.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/deploy.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/dt_shmem.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/dt_socket.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/fontmanager.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/fxplugins.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/glass.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/glib-lite.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/gstreamer-lite.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/hprof.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/instrument.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/j2pcsc.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/j2pkcs11.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jaas_nt.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/java.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/java_crw_demo.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/javafx_font.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/javafx_font_t2k.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/javafx_iio.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jawt.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jdwp.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jfr.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jfxmedia.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jfxwebkit.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jli.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jpeg.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jsdt.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jsound.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/jsoundds.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/kcms.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/lcms.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/management.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/mlib_image.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/msvcp120.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/msvcr100.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/msvcr120.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/net.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/nio.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/npt.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/plugin2/msvcr100.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/plugin2/npjp2.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/prism_common.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/prism_d3d.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/prism_sw.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/resource.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/sawindbg.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/server/Xusage.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/server/classes.jsa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/server/jvm.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/splashscreen.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/sunec.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/sunmscapi.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/t2k.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/unpack.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/verify.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/w2k_lsa_auth.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/bin/zip.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/accessibility.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/amd64/jvm.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/calendars.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/classlist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/cmm/CIEXYZ.pf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/cmm/GRAY.pf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/cmm/LINEAR_RGB.pf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/cmm/PYCC.pf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/cmm/sRGB.pf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/content-types.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/currency.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/ext/meta-index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/flavormap.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fontconfig.bfc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fontconfig.properties.src" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaBrightDemiBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaBrightDemiItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaBrightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaBrightRegular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaSansDemiBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaSansRegular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaTypewriterBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/fonts/LucidaTypewriterRegular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/hijrah-config-umalqura.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/cursors.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/invalid32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/win32_CopyDrop32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/win32_CopyNoDrop32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/win32_LinkDrop32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/win32_LinkNoDrop32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/win32_MoveDrop32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/images/cursors/win32_MoveNoDrop32x32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/javafx.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/jfr/default.jfc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/jfr/profile.jfc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/jvm.hprof.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/logging.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/management/jmxremote.access" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/management/jmxremote.password.template" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/management/management.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/management/snmp.acl.template" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/meta-index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/net.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/psfont.properties.ja" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/psfontj2d.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/blacklist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/blacklisted.certs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/cacerts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/java.policy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/java.security" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/javaws.policy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/security/trusted.libraries" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/sound.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/tzdb.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/YouBot/bundles/YouBot/runtime/lib/tzmappings" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/fxml/Main.fxml" afterPath="$PROJECT_DIR$/build/resources/main/fxml/Main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Util.java" afterPath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/model/VideoGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/model/VideoGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/HeaderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/HeaderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/LoginWebController.java" afterPath="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/LoginWebController.java" />
     </list>
     <ignored path="YouBot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -196,28 +57,7 @@
     <favorites_list name="YouBot" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.672209">
-              <caret line="383" column="27" selection-start-line="383" selection-start-column="27" selection-end-line="383" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="274" column="111" selection-start-line="274" selection-start-column="111" selection-end-line="274" selection-end-column="111" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -533,16 +373,16 @@
         <option value="$PROJECT_DIR$/src/test/java/YouBot_TestB.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/LoginWeb.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/LoginWebController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Auth.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/FooterController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/Footer.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/YouBot.java" />
         <option value="$PROJECT_DIR$/.idea/artifacts/YouBot.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/HeaderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/model/VideoGroup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/HeaderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/LoginWebController.java" />
       </list>
     </option>
   </component>
@@ -577,6 +417,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -595,11 +437,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YouBot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="youbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1099,7 +1027,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2917981" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1145,23 +1073,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Header.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.24269006">
           <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Main.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/TrayNotification.jar!/tray/notification/TrayNotification.class">
@@ -1330,13 +1258,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/LoginWeb.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1636364">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/web/WebEngine.java">
@@ -1350,20 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8527919">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/LoginWebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4750594">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Auth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2114015">
-          <caret line="97" column="91" selection-start-line="97" selection-start-column="91" selection-end-line="97" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -1390,13 +1304,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/Footer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39766082">
           <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/youtube.png">
@@ -1454,32 +1368,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/HeaderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/YouBot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <caret line="165" column="32" selection-start-line="165" selection-start-column="32" selection-end-line="165" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/HeaderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/LoginWebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27315915">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+          <folding>
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Auth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.15201901">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="111" selection-start-line="274" selection-start-column="111" selection-end-line="274" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.41330168">
+          <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/doppelgunner/youbot/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.672209">
+        <state vertical-scroll-proportion="1.3325416">
           <caret line="383" column="27" selection-start-line="383" selection-start-column="27" selection-end-line="383" selection-end-column="27" />
           <folding />
         </state>
