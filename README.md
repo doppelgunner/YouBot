@@ -31,4 +31,4 @@ alt="YouBot Icon" border="10" /></a>
 
 ## Problems
 * If you encountered any problem please report an issue.
-* If you cannot login to google (using javafx webview) then use v1.0.1.5 and up.
+* If you cannot login to google (using javafx webview) then use v1.0.1.5 and up. [Read issue #1](https://github.com/doppelgunner/YouBot/issues/1)
