@@ -28,3 +28,7 @@ alt="YouBot Icon" border="10" /></a>
 * [Glyphicons](http://glyphicons.com/) (for almost all icons)
 * [youtube API](https://developers.google.com/youtube/)
 * [TrayNotification](https://github.com/PlusHaze/TrayNotification) by PlusHaze
+
+## Problems
+* If you encountered any problem please report an issue.
+* If you cannot login to google (using javafx webview) then use v1.0.1.5 and up. [Read issue #1](https://github.com/doppelgunner/YouBot/issues/1)
