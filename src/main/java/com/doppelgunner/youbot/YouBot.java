@@ -136,7 +136,11 @@ public class YouBot extends Application {
         loginStage.getIcons().add(new Image("/images/icon.png"));
 
 
+
         mainScene = new Scene(mainRoot);
+
+        Util.setDefaultStylesheet(mainScene);
+        Util.setDefaultStylesheet(loginStage.getScene());
 
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.getIcons().add(new Image("/images/icon.png"));

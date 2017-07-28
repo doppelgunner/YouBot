@@ -33,6 +33,7 @@ public class VideoGroup {
     private String title;
     private String description;
     private String channelTitle;
+    private boolean commentsDisabled;
 
     @JsonIgnore private HBox layoutNode;
     @JsonIgnore private VBox descNode;
@@ -74,6 +75,8 @@ public class VideoGroup {
         layoutNode.setSpacing(20);
         layoutNode.setAlignment(Pos.CENTER_LEFT);
         descNode.setSpacing(5);
+
+        commentsDisabled = true;
     }
 
     public VideoGroup(Video video) {

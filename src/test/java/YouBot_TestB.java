@@ -115,5 +115,19 @@ public class YouBot_TestB {
         for (int i = 0; i < nl.length; i++) {
             assertTrue(nl[i].equals(list.get(i)));
         }
+
+        list = FXCollections.observableArrayList(list.stream().distinct().collect(Collectors.toList()));
+        assertTrue(list.size() == 1);
     }
+
+    @Test
+    public void v1_0_1_6() {
+        assertTrue("has no internet",Util.hasInternet());
+
+
+        String youtubeURL = "https://www.youtube.com/watch?v=n1lE7wgBYGs";
+        assertEquals(Util.getYoutubeID(youtubeURL),"n1lE7wgBYGs");
+        assertEquals(Util.getYoutubeID("n1lE7wgBYGs"), "n1lE7wgBYGs");
+    }
+
 }

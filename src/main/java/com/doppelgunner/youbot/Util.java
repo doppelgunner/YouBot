@@ -10,8 +10,10 @@ import com.google.api.services.oauth2.Oauth2;
 import com.google.api.services.oauth2.model.Userinfoplus;
 import com.google.api.services.youtube.YouTube;
 import com.google.api.services.youtube.model.*;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
@@ -32,6 +34,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -70,6 +74,8 @@ public class Util {
     }
 
     public static String getYoutubeID(String youtubeURL) {
+        if (!youtubeURL.contains(getYoutubeWatch())) return youtubeURL;
+        if (!youtubeURL.contains(getYoutubeWatch2())) return youtubeURL;
         int start = youtubeURL.indexOf("v=");
         int amper = youtubeURL.indexOf('&');
         return youtubeURL.substring((start == -1) ? 0 : start + 2, (amper == -1) ? youtubeURL.length() : amper);
@@ -167,7 +173,7 @@ public class Util {
                     .stream()
                     .map(result -> result.getId().getVideoId())
                     .collect(Collectors.joining(","));
-            YouTube.Videos.List listVideoRequest = youtube.videos().list("snippet, recordingDetails").setId(videoIds);
+            YouTube.Videos.List listVideoRequest = youtube.videos().list("snippet, recordingDetails, statistics").setId(videoIds);
             VideoListResponse listResponse = listVideoRequest.execute();
 
             return listResponse.getItems();
@@ -255,24 +261,29 @@ public class Util {
      * @param videoId
      * @param comment
      */
-    public static void comment(YouTube youTubeAuthentication, String videoId, String comment) {
-        try {
-            CommentSnippet commentSnippet = new CommentSnippet();
-            commentSnippet.setTextOriginal(comment);
-            Comment topLevelComment = new Comment();
-            topLevelComment.setSnippet(commentSnippet);
+    public static void comment(YouTube youTubeAuthentication, String videoId, String comment) throws IOException {
+        CommentSnippet commentSnippet = new CommentSnippet();
+        commentSnippet.setTextOriginal(comment);
+        Comment topLevelComment = new Comment();
+        topLevelComment.setSnippet(commentSnippet);
 
-            CommentThreadSnippet commentThreadSnippet = new CommentThreadSnippet();
-            commentThreadSnippet.setVideoId(videoId);
-            commentThreadSnippet.setTopLevelComment(topLevelComment);
+        CommentThreadSnippet commentThreadSnippet = new CommentThreadSnippet();
+        commentThreadSnippet.setVideoId(videoId);
+        commentThreadSnippet.setTopLevelComment(topLevelComment);
 
-            CommentThread commentThread = new CommentThread();
-            commentThread.setSnippet(commentThreadSnippet);
+        CommentThread commentThread = new CommentThread();
+        commentThread.setSnippet(commentThreadSnippet);
 
-            youTubeAuthentication.commentThreads().insert("snippet",commentThread).execute();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Util.notify("YouBot", "Problem sending comment, check Internet connection", NotificationType.NOTICE);
+        youTubeAuthentication.commentThreads().insert("snippet",commentThread).execute();
+    }
+
+    public static boolean hasInternet() {
+        try (Socket sock = new Socket()) {
+            InetSocketAddress addr = new InetSocketAddress("www.google.com",80);
+            sock.connect(addr,3000);
+            return true;
+        } catch (Exception ex) {
+            return false;
         }
     }
 
@@ -342,6 +353,14 @@ public class Util {
         Thread thread = new Thread(task);
         thread.setDaemon(daemon);
         thread.start();
+
+        task.exceptionProperty().addListener((o,ov,nv) -> {
+            if (nv != null) {
+                Exception ex = (Exception)nv;
+                ex.printStackTrace();
+            }
+        });
+
         task.setOnSucceeded(e -> {
             if (onSucceded != null) {
                 onSucceded.run();
@@ -402,5 +421,13 @@ public class Util {
 
     public static String getYoutubeWatch() {
         return "www.youtube.com/watch?v=";
+    }
+    public static String getYoutubeWatch2() {
+        return "youtube.com/watch?v=";
+    }
+
+    public static void setDefaultStylesheet(Scene scene) {
+        scene.getStylesheets().clear();
+        scene.getStylesheets().add("file:data/theme/style.css");
     }
 }

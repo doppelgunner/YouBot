@@ -7,6 +7,7 @@ import com.doppelgunner.youbot.model.VideoGroup;
 import com.google.api.services.youtube.model.SearchResult;
 import com.google.api.services.youtube.model.Video;
 import com.sun.xml.internal.ws.client.sei.ResponseBuilder;
+import javafx.application.Platform;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.collections.FXCollections;
@@ -23,6 +24,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import tray.notification.NotificationType;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -113,46 +115,9 @@ public class MainController extends Controller {
 
         resultsList = FXCollections.observableArrayList();
         selectedList = FXCollections.observableArrayList();
-        resultsListView.setCellFactory(param -> {
-            ListCell<VideoGroup> cell = new ListCell<VideoGroup>() {
-                @Override
-                protected void updateItem(VideoGroup item, boolean empty) {
-                    super.updateItem(item, empty);
-                    if (item != null && !empty) {
-                        HBox hBox = (HBox)item.getLayoutNode();
-                        hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
-                        setGraphic(hBox);
-                    } else {
-                        setGraphic(null);
-                    }
-                }
-            };
-            cell.setOnMouseClicked(me -> {
-                if (cell.isEmpty()) me.consume();
-            });
-            addContextMenu(cell);
-            return cell;
-        });
-        selectedListView.setCellFactory(param -> {
-            ListCell<VideoGroup> cell = new ListCell<VideoGroup>() {
-                @Override
-                protected void updateItem(VideoGroup item, boolean empty) {
-                    super.updateItem(item, empty);
-                    if (item != null && !empty) {
-                        HBox hBox = (HBox)item.getLayoutNode();
-                        hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
-                        setGraphic(hBox);
-                    } else {
-                        setGraphic(null);
-                    }
-                }
-            };
-            cell.setOnMouseClicked(me -> {
-                if (cell.isEmpty()) me.consume();
-            });
-            addContextMenu(cell);
-            return cell;
-        });
+
+        setCellFactoryListView(resultsListView);
+        setCellFactoryListView(selectedListView);
 
         resultsListView.setItems(resultsList);
         selectedListView.setItems(selectedList);
@@ -193,6 +158,29 @@ public class MainController extends Controller {
             }
         });
         setIcons();
+    }
+
+    private void setCellFactoryListView(ListView<VideoGroup> listView) {
+        listView.setCellFactory(param -> {
+            ListCell<VideoGroup> cell = new ListCell<VideoGroup>() {
+                @Override
+                protected void updateItem(VideoGroup item, boolean empty) {
+                    super.updateItem(item, empty);
+                    if (item != null && !empty) {
+                        HBox hBox = (HBox)item.getLayoutNode();
+                        hBox.setPrefWidth(resultsListView.getPrefWidth() - 30);
+                        setGraphic(hBox);
+                    } else {
+                        setGraphic(null);
+                    }
+                }
+            };
+            cell.setOnMouseClicked(me -> {
+                if (cell.isEmpty()) me.consume();
+            });
+            addContextMenu(cell);
+            return cell;
+        });
     }
 
     private void addContextMenu(ListCell<VideoGroup> cell) {
@@ -266,7 +254,7 @@ public class MainController extends Controller {
 
     @FXML
     private void search() {
-        String queryString = searchTextField.getText();
+        String queryString = Util.getYoutubeID(searchTextField.getText());
         if (queryString == null || queryString.isEmpty()) {
             Util.notify("YouBot", "Search: Fill up the text field", NotificationType.NOTICE);
             return;
@@ -285,12 +273,18 @@ public class MainController extends Controller {
         List<SearchResult> results = new ArrayList<>();
         searchButton.setDisable(true);
         Util.runBackground(
-                () -> results.addAll(Util.searchYouTubeVideos(queryString, orderFinal.value(), currentMaxSearch)),
+                () -> {
+                    results.addAll(
+                            Util.searchYouTubeVideos(
+                                    queryString,
+                                    orderFinal.value(),
+                                    currentMaxSearch));
+                },
                 () -> {
                     resultsList.clear();
                     resultsList.addAll(results
                             .stream()
-                            .map(r -> new VideoGroup(r))
+                            .map(v -> new VideoGroup(v))
                             .collect(Collectors.toList()));
                     searchButton.setDisable(false);
                 },
@@ -312,11 +306,20 @@ public class MainController extends Controller {
         vg.getCheckBox().setSelected(false);
     }
 
+    private void removeSameSelectedVideos() {
+        List list = Util.removeDuplicates(selectedList);
+        selectedList.clear();
+        selectedList.addAll(list);
+        selectedListView.setItems(selectedList);
+    }
+
     @FXML
     private void addAllResults() {
         resetChekBoxes(resultsList);
         selectedList.addAll(resultsList);
         resultsList.clear();
+
+        removeSameSelectedVideos();
     }
 
     @FXML private void clearSelected() {
@@ -339,6 +342,8 @@ public class MainController extends Controller {
                 i--;
             }
         }
+
+        removeSameSelectedVideos();
     }
 
     @FXML
@@ -380,22 +385,44 @@ public class MainController extends Controller {
             Util.notify("YouBot", "Choose videos to comment on", NotificationType.NOTICE);
             return;
         }
-        sendCommentButton.setDisable(true);
-        Util.runBackground(
-                () -> {
-                    for (int i = 0; i < selectedList.size(); i++) {
-                        Util.comment(YouBot.getYoutubeAuth(),selectedList.get(i).getVideoId(),comment);
-                    }
-                },
-                () -> {
-                    sendCommentButton.setDisable(false);
-                },
-                () -> {
-                    sendCommentButton.setDisable(false);
-                    Util.notify("YouBot", "Sending comment failed, check internet connection.", NotificationType.NOTICE);
-                },
-                false
-        );
+        if (!Util.hasInternet()) {
+            Util.notify("YouBot", "Problem sending comment, check Internet connection", NotificationType.NOTICE);
+        } else {
+            sendCommentButton.setDisable(true);
+            Util.runBackground(
+                    () -> {
+                        List<VideoGroup> toDelete = new ArrayList<>();
+                        int disabledComments = 0;
+                        for (int i = 0; i < selectedList.size(); i++) {
+                            try {
+                                Util.comment(YouBot.getYoutubeAuth(),selectedList.get(i).getVideoId(),comment);
+                            } catch (IOException e) {
+                                toDelete.add(selectedList.get(i));
+                                disabledComments++;
+                            }
+                        }
+
+                        if (disabledComments > 0) {
+                            final int dc = disabledComments;
+                            Platform.runLater(() ->
+                                    Util.notify("YouBot","Deleting " + dc + " video/s that have comments disabled.",NotificationType.NOTICE));
+                        }
+
+                        Platform.runLater(() -> {
+                            for (int d = 0; d < toDelete.size(); d++) {
+                                selectedList.remove(toDelete.get(d));
+                            }
+                        });
+                    },
+                    () -> {
+                        sendCommentButton.setDisable(false);
+                    },
+                    () -> {
+                        sendCommentButton.setDisable(false);
+                    },
+                    false
+            );
+        }
     }
 
     @FXML
