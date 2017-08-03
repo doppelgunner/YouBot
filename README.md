@@ -2,6 +2,7 @@
 " target="_blank"><img src="https://github.com/doppelgunner/YouBot/blob/master/src/main/resources/images/icon.png" 
 alt="YouBot Icon" border="10" /></a>
 * A simple youtube commenter app
+# Sorry guys the app is now blocked because of mass commenting!
 
 ## Donations
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.me/doppelgunner)  
